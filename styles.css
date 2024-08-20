@@ -28,12 +28,12 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* On top of header */
 }
 
 .lista li {
     flex: 1 1 auto; /* Permite que los elementos se ajusten proporcionalmente */
-    margin: 5px; /* Espacio entre los elementos */
+    margin: 5px;
     text-align: center; /* Centra el contenido dentro de cada elemento */
     min-width: 100px; /* Define un ancho mínimo para los elementos */
     box-sizing: border-box;
@@ -63,8 +63,7 @@
         padding-top: 100px; /* Incrementa el espacio para dispositivos más pequeños */
     }
     .mapa {
-        width: 100%;
-        height: 800%;
+        width: 50%;
     }
 }
 
@@ -73,22 +72,16 @@
         padding-top: 130px;
     }
     .mapa {
-        width: 50%;
-        /* height: 1000%; */
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 360px) {
     body {
         padding-top: 190px;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        align-content: center;
     }
     .mapa {
         width: 100%;
-        height: 800%;
     }
 }
 

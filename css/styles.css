@@ -1,0 +1,234 @@
+@charset "UTF-8";
+* {
+  margin: 0; /*hace que el elemento no tenga margen*/
+  padding: 0;
+}
+
+/* index.html */
+.index {
+  background-image: url(../imagenes/light-pink-colored-vintage-watercolor-abstract-background-and-motion-light-background-and-gradient-diagonal-lines-free-photo.jpg);
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.carousel-indicators {
+  margin-bottom: -15px; /* Ajusta este valor según sea necesario */
+}
+
+.lista {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px; /* Espacio entre los elementos */
+  max-width: 100%; /* Asegura que la lista no se desborde */
+  box-sizing: border-box; /* Considera el padding y el border dentro del width */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* On top of header */
+}
+.lista li {
+  flex: 1 1 auto; /* Permite que los elementos se ajusten proporcionalmente */
+  margin: 5px;
+  text-align: center; /* Centra el contenido dentro de cada elemento */
+  min-width: 100px; /* Define un ancho mínimo para los elementos */
+  box-sizing: border-box;
+}
+.lista li a {
+  display: block; /* Asegura que el enlace ocupe toda el área del <li> */
+  padding: 10px; /* Añade padding al enlace para hacerlo más fácil de tocar */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Hereda el color del texto del contenedor */
+  background-color: #f0f0f0; /* Añade un fondo al enlace */
+  border-radius: 5px; /* Opcional: redondea los bordes */
+  box-sizing: border-box;
+}
+
+.titulo-index {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 10px;
+  letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding-top: 100px; /* Incrementa el espacio para dispositivos más pequeños */
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .mapa {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  body {
+    padding-top: 130px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .mapa {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  body {
+    padding-top: 190px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .mapa {
+    width: 100%;
+  }
+}
+.titulo-2, .titulo-3 {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.titulo-3 {
+  text-align: center;
+}
+
+.parrafo, .parrafo-2 {
+  max-width: 80%; /* Limita el ancho máximo para pantallas grandes */
+  margin: 10px auto; /* Centra el párrafo en su contenedor */
+  text-align: center; /* Alinea el texto al centro */
+  line-height: 1.6; /* Mejora la legibilidad */
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  padding: 5px; /* Espacio alrededor del texto */
+}
+
+.parrafo-2 {
+  border: 2px solid rgb(179, 130, 138);
+}
+
+.img {
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+  max-width: 100%; /* Asegura que la imagen sea responsive */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* fin index.html */
+.titulo-noindex {
+  color: rgb(166, 115, 144);
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 20px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* jugadoras.html */
+.jugador {
+  align-content: center;
+}
+.jugador .grid-jugadoras {
+  display: grid;
+  grid-area: dorsal, nombre, posicion;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(19, auto);
+  width: 70%;
+  margin: 0 auto; /* centra la tabla horizontalmente */
+  row-gap: 20px;
+}
+.jugador .grid-tecnico {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(19, auto);
+  width: 50%;
+  margin: 0 auto; /* centra la tabla horizontalmente */
+  row-gap: 20px;
+}
+.jugador .grid-item {
+  padding: 10px;
+  text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+  align-content: center; /* Asegura que el texto esté centrado verticalmente */
+  border: 1px solid rgba(80, 17, 17, 0.344); /* Opcional: para visualizar mejor las celdas */
+}
+
+/* fin jugadoras.html */
+/* testimonios.html */
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10 px;
+}
+
+.testimonios {
+  padding: 4px;
+  margin: 10px;
+  border: 3px solid gray;
+}
+
+.persona {
+  display: flex;
+  align-items: flex-end;
+  font-size: 17px;
+}
+
+/* fin testimonios.html */
+/* historia.html */
+.historia {
+  padding: 20px;
+  margin: 40px;
+  border: 3px solid gray;
+}
+
+/* fin historia.html */
+/* galeria.html */
+.fototeca {
+  border: 1px solid gray;
+  margin: 20px;
+}
+
+/* fin galeria.html */
+/* contacto.html */
+.contacto {
+  margin: 10px;
+}
+
+.parrafo-contacto {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* footer */
+.footer {
+  text-align: center; /* Centra el contenido dentro del footer */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center; /* Centra los íconos horizontalmente */
+  align-items: center; /* Asegura que los íconos estén centrados verticalmente */
+  gap: 10px;
+  margin-top: 10px; /* Espacio entre el texto y las redes sociales */
+}
+
+.parrafo-footer {
+  margin-bottom: 10px; /* Asegura espacio entre el párrafo y los íconos de redes sociales */
+}
+
+/* fin footer */
+
+/*# sourceMappingURL=styles.css.map */

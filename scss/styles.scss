@@ -6,14 +6,14 @@
 /* index.html */
 
 .index {
-    background-image: url(imagenes/light-pink-colored-vintage-watercolor-abstract-background-and-motion-light-background-and-gradient-diagonal-lines-free-photo.jpg);
+    background-image: url(../imagenes/light-pink-colored-vintage-watercolor-abstract-background-and-motion-light-background-and-gradient-diagonal-lines-free-photo.jpg);
     background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .carousel-indicators {
-    margin-bottom: -10px; /* Ajusta este valor según sea necesario */
+    margin-bottom: -15px; /* Ajusta este valor según sea necesario */
 }
 
 .lista {
@@ -29,38 +29,54 @@
     width: 100%;
     top: 0;
     z-index: 1000; /* On top of header */
-}
 
-.lista li {
-    flex: 1 1 auto; /* Permite que los elementos se ajusten proporcionalmente */
-    margin: 5px;
-    text-align: center; /* Centra el contenido dentro de cada elemento */
-    min-width: 100px; /* Define un ancho mínimo para los elementos */
-    box-sizing: border-box;
-}
+    li {
+        flex: 1 1 auto; /* Permite que los elementos se ajusten proporcionalmente */
+        margin: 5px;
+        text-align: center; /* Centra el contenido dentro de cada elemento */
+        min-width: 100px; /* Define un ancho mínimo para los elementos */
+        box-sizing: border-box;
 
-.lista li a {
-    display: block; /* Asegura que el enlace ocupe toda el área del <li> */
-    padding: 10px; /* Añade padding al enlace para hacerlo más fácil de tocar */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: inherit; /* Hereda el color del texto del contenedor */
-    background-color: #f0f0f0; /* Añade un fondo al enlace */
-    border-radius: 5px; /* Opcional: redondea los bordes */
-    box-sizing: border-box;
+        a {
+            display: block; /* Asegura que el enlace ocupe toda el área del <li> */
+            padding: 10px; /* Añade padding al enlace para hacerlo más fácil de tocar */
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: inherit; /* Hereda el color del texto del contenedor */
+            background-color: #f0f0f0; /* Añade un fondo al enlace */
+            border-radius: 5px; /* Opcional: redondea los bordes */
+            box-sizing: border-box;
+        }
+    }
 }
 
 .titulo-index {
     font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 40px;
     display: flex;
     text-align: center;
     justify-content: center;
     padding-top: 60px;
     margin: 10px;
+    letter-spacing: 5px;
 }
+
+
+// @media only screen and (max-width: 600px) {
+//     .lista {
+//         display: none; /* Oculta la lista en pantallas pequeñas */
+//     }
+
+//     .menu-icon {
+//         display: block; /* Muestra el icono de menú */
+//     }
+// }
 
 @media only screen and (max-width: 900px) {
     body {
         padding-top: 100px; /* Incrementa el espacio para dispositivos más pequeños */
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr) !important;
     }
     .mapa {
         width: 50%;
@@ -71,6 +87,9 @@
     body {
         padding-top: 130px;
     }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
     .mapa {
         width: 100%;
     }
@@ -79,6 +98,9 @@
 @media only screen and (max-width: 360px) {
     body {
         padding-top: 190px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr) !important;
     }
     .mapa {
         width: 100%;
@@ -136,41 +158,35 @@ p {
 
 .jugador {
     align-content: center;
-}
 
-.grid-tabla {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(19, auto);
-    row-gap: 20px;
-}
+    .grid-jugadoras {
+        display: grid;
+        grid-area: dorsal, nombre, posicion;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(19, auto);
+        width: 70%;
+        margin: 0 auto; /* centra la tabla horizontalmente */
+        row-gap: 20px;
+    }
 
-.grid-item {
-    padding: 10px;
-    text-align: center; /* Asegura que el texto esté centrado */
-    border: 1px solid rgba(80, 17, 17, 0.344); /* Opcional: para visualizar mejor las celdas */
-}
+    .grid-tecnico {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(19, auto);
+        width: 50%;
+        margin: 0 auto; /* centra la tabla horizontalmente */
+        row-gap: 20px;
+    }
 
-.grid-dorsal {
-    grid-column: 2/3;
-}
-
-.grid-nombre {
-    grid-column: 3/5;
+    .grid-item {
+        padding: 10px;
+        text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+        align-content: center; /* Asegura que el texto esté centrado verticalmente */
+        border: 1px solid rgba(80, 17, 17, 0.344); /* Opcional: para visualizar mejor las celdas */
+    }
 }
 
 /* fin jugadoras.html */
-
-/* cuerpo-tecnico.html */
-
-.grid-tabla2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(19, auto);
-    row-gap: 20px;
-}
-
-/* fin cuerpo-tecnico.html */
 
 /* testimonios.html */
 
@@ -182,7 +198,7 @@ p {
 }
 
 .testimonios {
-    display: grid;
+    // display: grid;
     padding: 4px;
     margin: 10px;
     border: 3px solid gray;
@@ -243,24 +259,5 @@ p {
 .parrafo-footer {
     margin-bottom: 10px; /* Asegura espacio entre el párrafo y los íconos de redes sociales */
 }
-
-
-/* .footer {
-    padding: 10px;
-    margin-top: 30px;
-    font-size: 12;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.redes-sociales {
-    gap: 10px;
-}
-
-.parrafo-footer {
-    margin: 0;
-} */
 
 /* fin footer */

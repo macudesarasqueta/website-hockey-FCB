@@ -12,7 +12,7 @@ body {
     .titulo-index {
         @include title (("Edu AU VIC WA NT Hand", cursive), flex, center, center, 10px, 0);
         font-size: 40px;
-        letter-spacing: 5px;
+        letter-spacing: 10px;
         padding-top: 60px;
     }
     

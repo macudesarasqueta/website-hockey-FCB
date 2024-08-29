@@ -1,0 +1,32 @@
+.mobile-navbar {
+    display: none;
+}
+
+.img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    max-width: 100%; /* Asegura que la imagen sea responsive */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.testimonios {
+    padding: 4px;
+    margin: 10px;
+    border: 3px solid gray;
+    .persona {
+        display: flex;
+        align-items: flex-end;
+        font-size: 17px;
+    }
+}
+
+.historia {
+    padding: 20px;
+    margin: 40px;
+    border: 3px solid gray;
+}
+
+.fototeca {
+    border: 1px solid gray;
+    margin: 20px;
+}

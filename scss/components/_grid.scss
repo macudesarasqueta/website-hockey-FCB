@@ -1,0 +1,32 @@
+.jugador {
+    align-content: center;
+
+    .grid-jugadoras {
+        @include grid-margin-gap;
+        grid-area: dorsal, nombre, posicion;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(19, auto);
+        width: 70%;
+    }
+
+    .grid-tecnico {
+        @include grid-margin-gap;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(10, auto);
+        width: 50%;
+    }
+
+    .grid-item {
+        padding: 10px;
+        text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+        align-content: center; /* Asegura que el texto esté centrado verticalmente */
+        border: 1px solid rgba(80, 17, 17, 0.344); /* Opcional: para visualizar mejor las celdas */
+    }
+}
+
+.grid-testimonios-galeria {
+    margin: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}

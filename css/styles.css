@@ -4,16 +4,68 @@
   padding: 0;
 }
 
-/* index.html */
-.index {
+body {
   background-image: url(../imagenes/light-pink-colored-vintage-watercolor-abstract-background-and-motion-light-background-and-gradient-diagonal-lines-free-photo.jpg);
   background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+body .titulo-index {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding-top: 60px;
+}
+body .titulo-2, body .titulo-3 {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  display: flex;
+  justify-content: center;
+  text-align: 0;
+  margin: 10px;
+  padding: 0;
+}
+body .titulo-3 {
+  padding-top: 30px;
+  text-align: center;
+}
+body .parrafo, body .parrafo-2 {
+  max-width: 80%; /* Limita el ancho máximo para pantallas grandes */
+  margin: 10px auto; /* Centra el párrafo en su contenedor */
+  text-align: center; /* Alinea el texto al centro */
+  line-height: 1.6; /* Mejora la legibilidad */
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  padding: 5px; /* Espacio alrededor del texto */
+}
+body .parrafo-2 {
+  border: 2px solid rgb(179, 130, 138);
+}
 
-.carousel-indicators {
-  margin-bottom: -15px; /* Ajusta este valor según sea necesario */
+.titulo-noindex {
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  text-align: 0;
+  margin: 20px;
+  padding: 0;
+  color: rgb(166, 115, 144);
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contacto {
+  margin: 10px;
+}
+.contacto .parrafo-contacto {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .lista {
@@ -47,72 +99,54 @@
   box-sizing: border-box;
 }
 
-.titulo-index {
-  font-family: "Edu AU VIC WA NT Hand", cursive;
-  font-size: 40px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding-top: 60px;
-  margin: 10px;
-  letter-spacing: 5px;
+.carousel-indicators {
+  margin-bottom: -15px; /* Ajusta este valor según sea necesario */
 }
 
-@media only screen and (max-width: 900px) {
-  body {
-    padding-top: 100px; /* Incrementa el espacio para dispositivos más pequeños */
-  }
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  .mapa {
-    width: 50%;
-  }
+.jugador {
+  align-content: center;
 }
-@media only screen and (max-width: 510px) {
-  body {
-    padding-top: 130px;
-  }
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  .mapa {
-    width: 100%;
-  }
+.jugador .grid-jugadoras {
+  display: grid;
+  margin: 0 auto; /* centra la tabla horizontalmente */
+  row-gap: 20px;
+  grid-area: dorsal, nombre, posicion;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(19, auto);
+  width: 70%;
 }
-@media only screen and (max-width: 360px) {
-  body {
-    padding-top: 190px;
-  }
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  .mapa {
-    width: 100%;
-  }
+.jugador .grid-tecnico {
+  display: grid;
+  margin: 0 auto; /* centra la tabla horizontalmente */
+  row-gap: 20px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(10, auto);
+  width: 50%;
 }
-.titulo-2, .titulo-3 {
-  font-family: "Edu AU VIC WA NT Hand", cursive;
-  display: flex;
-  justify-content: center;
+.jugador .grid-item {
   padding: 10px;
+  text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+  align-content: center; /* Asegura que el texto esté centrado verticalmente */
+  border: 1px solid rgba(80, 17, 17, 0.344); /* Opcional: para visualizar mejor las celdas */
 }
 
-.titulo-3 {
-  text-align: center;
+.grid-testimonios-galeria {
+  margin: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.parrafo, .parrafo-2 {
-  max-width: 80%; /* Limita el ancho máximo para pantallas grandes */
-  margin: 10px auto; /* Centra el párrafo en su contenedor */
-  text-align: center; /* Alinea el texto al centro */
-  line-height: 1.6; /* Mejora la legibilidad */
-  font-size: 1rem; /* Tamaño de fuente estándar */
-  padding: 5px; /* Espacio alrededor del texto */
+.footer {
+  text-align: center; /* Centra el contenido dentro del footer */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+.footer .parrafo-footer {
+  margin-bottom: 10px; /* Asegura espacio entre el párrafo y los íconos de redes sociales */
 }
 
-.parrafo-2 {
-  border: 2px solid rgb(179, 130, 138);
+.mobile-navbar {
+  display: none;
 }
 
 .img {
@@ -122,113 +156,50 @@
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
-/* fin index.html */
-.titulo-noindex {
-  color: rgb(166, 115, 144);
-  font-size: 30px;
-  font-family: "Pacifico", cursive;
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
-  margin: 20px;
-}
-
-p {
-  font-family: "Courier New", Courier, monospace;
-}
-
-/* jugadoras.html */
-.jugador {
-  align-content: center;
-}
-.jugador .grid-jugadoras {
-  display: grid;
-  grid-area: dorsal, nombre, posicion;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(19, auto);
-  width: 70%;
-  margin: 0 auto; /* centra la tabla horizontalmente */
-  row-gap: 20px;
-}
-.jugador .grid-tecnico {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(19, auto);
-  width: 50%;
-  margin: 0 auto; /* centra la tabla horizontalmente */
-  row-gap: 20px;
-}
-.jugador .grid-item {
-  padding: 10px;
-  text-align: center; /* Asegura que el texto esté centrado horizontalmente */
-  align-content: center; /* Asegura que el texto esté centrado verticalmente */
-  border: 1px solid rgba(80, 17, 17, 0.344); /* Opcional: para visualizar mejor las celdas */
-}
-
-/* fin jugadoras.html */
-/* testimonios.html */
-.grid-container {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10 px;
-}
-
 .testimonios {
   padding: 4px;
   margin: 10px;
   border: 3px solid gray;
 }
-
-.persona {
+.testimonios .persona {
   display: flex;
   align-items: flex-end;
   font-size: 17px;
 }
 
-/* fin testimonios.html */
-/* historia.html */
 .historia {
   padding: 20px;
   margin: 40px;
   border: 3px solid gray;
 }
 
-/* fin historia.html */
-/* galeria.html */
 .fototeca {
   border: 1px solid gray;
   margin: 20px;
 }
 
-/* fin galeria.html */
-/* contacto.html */
-.contacto {
-  margin: 10px;
+@media only screen and (max-width: 900px) {
+  .mobile-navbar {
+    display: block !important;
+  }
+  .lista {
+    display: none !important;
+  }
+  .titulo-index, .titulo-noindex {
+    padding-top: 0 !important;
+  }
+  .grid-tecnico {
+    width: 80% !important;
+  }
+  .grid-jugadoras {
+    width: 95% !important;
+  }
+  .grid-testimonios-galeria {
+    grid-template-columns: 1fr !important;
+  }
+  .mapa {
+    width: 50%;
+  }
 }
-
-.parrafo-contacto {
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* footer */
-.footer {
-  text-align: center; /* Centra el contenido dentro del footer */
-  padding: 20px 0; /* Espaciado superior e inferior */
-}
-
-.redes-sociales {
-  display: flex;
-  justify-content: center; /* Centra los íconos horizontalmente */
-  align-items: center; /* Asegura que los íconos estén centrados verticalmente */
-  gap: 10px;
-  margin-top: 10px; /* Espacio entre el texto y las redes sociales */
-}
-
-.parrafo-footer {
-  margin-bottom: 10px; /* Asegura espacio entre el párrafo y los íconos de redes sociales */
-}
-
-/* fin footer */
 
 /*# sourceMappingURL=styles.css.map */

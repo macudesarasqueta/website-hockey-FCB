@@ -1,0 +1,23 @@
+@media only screen and (max-width: 900px) {
+    .mobile-navbar {
+        display: block !important;
+    }
+    .lista {
+        display: none !important;
+    }
+    .titulo-index, .titulo-noindex {
+        padding-top: 0 !important;
+    }
+    .grid-tecnico {
+        width: 80% !important;
+    }
+    .grid-jugadoras {
+        width: 95% !important;
+    }
+    .grid-testimonios-galeria {
+        grid-template-columns: 1fr !important;
+    }
+    .mapa {
+        width: 50%;
+    }
+}

@@ -1,0 +1,14 @@
+@mixin title ($font, $display, $content, $align, $margin, $padding){
+    font-family: $font;
+    display: $display;
+    justify-content: $content;
+    text-align: $align;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin grid-margin-gap{
+    display: grid;
+    margin: 0 auto; /* centra la tabla horizontalmente */
+    row-gap: 20px;
+}

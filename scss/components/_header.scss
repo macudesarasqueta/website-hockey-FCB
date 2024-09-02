@@ -24,13 +24,13 @@
             padding: 10px; /* Añade padding al enlace para hacerlo más fácil de tocar */
             text-decoration: none; /* Elimina el subrayado de los enlaces */
             color: inherit; /* Hereda el color del texto del contenedor */
-            background-color: #f0f0f0; /* Añade un fondo al enlace */
+            background-color: #d9cd43c0; /* Añade un fondo al enlace */
             border-radius: 5px; /* Opcional: redondea los bordes */
             box-sizing: border-box;
-
-            // &:hover {
-            //     background-color: darken (#f0f0f0, 20%);
-            // }
+            &:hover {
+                background-color: #d9cd43f2;
+                text-decoration: underline;
+            }
         }
     }
 }

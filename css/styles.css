@@ -5,12 +5,13 @@
 }
 
 body {
-  background-image: url(../imagenes/light-pink-colored-vintage-watercolor-abstract-background-and-motion-light-background-and-gradient-diagonal-lines-free-photo.jpg);
+  background-image: linear-gradient(to right, #004D98, #A50044);
   background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 body .titulo-index {
+  color: beige;
   font-family: "Edu AU VIC WA NT Hand", cursive;
   display: flex;
   justify-content: center;
@@ -19,9 +20,10 @@ body .titulo-index {
   padding: 0;
   font-size: 40px;
   letter-spacing: 10px;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 body .titulo-2, body .titulo-3 {
+  color: beige;
   font-family: "Edu AU VIC WA NT Hand", cursive;
   display: flex;
   justify-content: center;
@@ -34,15 +36,17 @@ body .titulo-3 {
   text-align: center;
 }
 body .parrafo, body .parrafo-2 {
+  color: beige;
   max-width: 80%; /* Limita el ancho máximo para pantallas grandes */
   margin: 10px auto; /* Centra el párrafo en su contenedor */
   text-align: center; /* Alinea el texto al centro */
   line-height: 1.6; /* Mejora la legibilidad */
-  font-size: 1rem; /* Tamaño de fuente estándar */
+  font-size: 1.2rem; /* Tamaño de fuente estándar */
   padding: 5px; /* Espacio alrededor del texto */
 }
 body .parrafo-2 {
   border: 2px solid rgb(179, 130, 138);
+  font-size: 1rem;
 }
 
 .titulo-noindex {
@@ -54,15 +58,17 @@ body .parrafo-2 {
   padding: 0;
   color: rgb(166, 115, 144);
   font-size: 40px;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 p {
+  color: beige;
   font-family: "Courier New", Courier, monospace;
 }
 
 .contacto {
-  margin: 10px;
+  color: beige;
+  margin: 20px;
 }
 .contacto .parrafo-contacto {
   font-family: "Times New Roman", Times, serif;
@@ -94,9 +100,13 @@ p {
   padding: 10px; /* Añade padding al enlace para hacerlo más fácil de tocar */
   text-decoration: none; /* Elimina el subrayado de los enlaces */
   color: inherit; /* Hereda el color del texto del contenedor */
-  background-color: #f0f0f0; /* Añade un fondo al enlace */
+  background-color: rgba(217, 205, 67, 0.7529411765); /* Añade un fondo al enlace */
   border-radius: 5px; /* Opcional: redondea los bordes */
   box-sizing: border-box;
+}
+.lista li a:hover {
+  background-color: rgba(217, 205, 67, 0.9490196078);
+  text-decoration: underline;
 }
 
 .carousel-indicators {
@@ -124,18 +134,26 @@ p {
   width: 50%;
 }
 .jugador .grid-item {
+  color: beige;
   padding: 10px;
   text-align: center; /* Asegura que el texto esté centrado horizontalmente */
   align-content: center; /* Asegura que el texto esté centrado verticalmente */
-  border: 1px solid rgba(80, 17, 17, 0.344); /* Opcional: para visualizar mejor las celdas */
+  border: 1px solid rgb(192, 87, 87); /* Opcional: para visualizar mejor las celdas */
 }
 
-.grid-testimonios-galeria {
+.grid-galeria {
   margin: 20px;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
+}
+
+.grid-testimonios {
+  margin: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .footer {
@@ -160,7 +178,8 @@ p {
 .testimonios {
   padding: 4px;
   margin: 10px;
-  border: 3px solid gray;
+  border: 3px solid #EDBB00;
+  font-size: 1.2rem;
 }
 .testimonios .persona {
   display: flex;
@@ -170,8 +189,8 @@ p {
 
 .historia {
   padding: 20px;
-  margin: 40px;
-  border: 3px solid gray;
+  margin: 20px;
+  border: 3px solid #EDBB00;
 }
 
 @media only screen and (max-width: 900px) {
@@ -184,6 +203,9 @@ p {
   .titulo-index, .titulo-noindex {
     padding-top: 0 !important;
   }
+  .titulo-index {
+    font-size: 25px !important;
+  }
   .grid-tecnico {
     width: 80% !important;
   }
@@ -192,11 +214,14 @@ p {
   }
   .historia {
     padding: 10px !important;
-    margin: 20px !important;
+    margin: 10px !important;
   }
-  .grid-testimonios-galeria {
+  .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+  }
+  .grid-testimonios {
+    grid-template-columns: repeat(1, 1fr);
   }
   .mapa {
     width: 50%;

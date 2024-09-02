@@ -4,19 +4,21 @@
 }
 
 body {
-    background-image: url(../imagenes/light-pink-colored-vintage-watercolor-abstract-background-and-motion-light-background-and-gradient-diagonal-lines-free-photo.jpg);
+    background-image: linear-gradient(to right, #004D98, #A50044); //EDBB00 yellow
     background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     .titulo-index {
+        color: beige;
         @include title (("Edu AU VIC WA NT Hand", cursive), flex, center, center, 10px, 0);
         font-size: 40px;
         letter-spacing: 10px;
-        padding-top: 60px;
+        padding-top: 70px;
     }
     
     .titulo-2, .titulo-3 {
+        color: beige;
         @include title (("Edu AU VIC WA NT Hand", cursive), flex, center, 0, 10px, 0);
     }
     
@@ -26,16 +28,18 @@ body {
     }
 
     .parrafo, .parrafo-2 {
+        color: beige;
         max-width: 80%; /* Limita el ancho máximo para pantallas grandes */
         margin: 10px auto; /* Centra el párrafo en su contenedor */
         text-align: center; /* Alinea el texto al centro */
         line-height: 1.6; /* Mejora la legibilidad */
-        font-size: 1rem; /* Tamaño de fuente estándar */
+        font-size: 1.2rem; /* Tamaño de fuente estándar */
         padding: 5px; /* Espacio alrededor del texto */
     }
     
     .parrafo-2 {
         border: 2px solid rgb(179, 130, 138);
+        font-size: 1rem
     }
 }
 
@@ -43,15 +47,17 @@ body {
     @include title (("Pacifico", cursive), flex, center, 0, 20px, 0);
     color: rgb(166, 115, 144);
     font-size: 40px;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 p {
+    color: beige;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .contacto {
-    margin: 10px;
+    color: beige;
+    margin: 20px;
     .parrafo-contacto {
         font-family: 'Times New Roman', Times, serif;
     }

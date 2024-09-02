@@ -9,23 +9,26 @@
     .titulo-index, .titulo-noindex {
         padding-top: 0 !important;
     }
+    .titulo-index{
+        font-size: 25px !important;
+    }
     .grid-tecnico {
         width: 80% !important;
     }
     .grid-jugadoras {
         width: 95% !important;
     }
-
     .historia {
         padding: 10px !important;
-        margin: 20px !important;
+        margin: 10px !important;
     }
-
-    .grid-testimonios-galeria {
+    .grid-galeria {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
-
+    .grid-testimonios {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .mapa {
         width: 50%;
     }

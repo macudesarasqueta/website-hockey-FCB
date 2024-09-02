@@ -12,7 +12,8 @@
 .testimonios {
     padding: 4px;
     margin: 10px;
-    border: 3px solid gray;
+    border: 3px solid #EDBB00;
+    font-size: 1.2rem;
     .persona {
         display: flex;
         align-items: flex-end;
@@ -22,6 +23,6 @@
 
 .historia {
     padding: 20px;
-    margin: 40px;
-    border: 3px solid gray;
+    margin: 20px;
+    border: 3px solid #EDBB00;
 }

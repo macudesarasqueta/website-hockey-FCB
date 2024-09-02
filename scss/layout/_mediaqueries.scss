@@ -1,4 +1,5 @@
 @media only screen and (max-width: 900px) {
+    
     .mobile-navbar {
         display: block !important;
     }
@@ -14,6 +15,12 @@
     .grid-jugadoras {
         width: 95% !important;
     }
+
+    .historia {
+        padding: 10px !important;
+        margin: 20px !important;
+    }
+
     .grid-testimonios-galeria {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);

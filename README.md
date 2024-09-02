@@ -28,7 +28,7 @@ Para clonar y ejecutar este proyecto en tu máquina local, sigue los pasos a con
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd tu-repositorio
+    cd macudesarasqueta
     ```
 
 3. Instala las dependencias (si las hay):

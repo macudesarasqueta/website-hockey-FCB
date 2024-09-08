@@ -18,6 +18,14 @@
     }
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    img {
+        margin: 0;
+    }
+}
+
 .testimonios {
     padding: 4px;
     margin: 10px;

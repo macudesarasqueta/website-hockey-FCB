@@ -20,7 +20,7 @@ body {
             opacity: 0;
             transform: translateY(-50px);
             display: inline-block;
-            animation: slideDown 0.5s ease forwards;
+            animation: slideDown 0.3s ease forwards;
         }
 
         @for $i from 1 through 30 {
@@ -72,7 +72,6 @@ body {
     }
 }
 
-
 .titulo-noindex {
     @include title (("Pacifico", cursive), flex, center, 0, 20px, 0);
     color: rgb(166, 115, 144);
@@ -89,9 +88,7 @@ p {
     color: beige;
     font-family: "Edu AU VIC WA NT Hand", cursive;
     margin: 20px;
-    img {
-        display: flex;
-    }
+    text-align: center;
 }
 
 .fototeca {

@@ -22,7 +22,7 @@ body .titulo-index {
   letter-spacing: 10px;
   padding-top: 70px;
 }
-body .titulo-2, body .titulo-3 {
+body .titulo-2, body .titulo-4 {
   color: beige;
   font-family: "Edu AU VIC WA NT Hand", cursive;
   display: flex;
@@ -30,6 +30,7 @@ body .titulo-2, body .titulo-3 {
   text-align: 0;
   margin: 10px;
   padding: 0;
+  padding: 30px;
 }
 body .titulo-3 {
   padding-top: 30px;
@@ -37,7 +38,7 @@ body .titulo-3 {
 }
 body .parrafo, body .parrafo-2 {
   color: beige;
-  max-width: 80%; /* Limita el ancho máximo para pantallas grandes */
+  max-width: 90%; /* Limita el ancho máximo para pantallas grandes */
   margin: 10px auto; /* Centra el párrafo en su contenedor */
   text-align: center; /* Alinea el texto al centro */
   line-height: 1.6; /* Mejora la legibilidad */
@@ -47,6 +48,12 @@ body .parrafo, body .parrafo-2 {
 body .parrafo-2 {
   border: 2px solid rgb(179, 130, 138);
   font-size: 1rem;
+}
+body h5 {
+  color: #f8e7ee;
+}
+body .img {
+  border-radius: 10%;
 }
 
 .titulo-noindex {
@@ -68,10 +75,16 @@ p {
 
 .contacto {
   color: beige;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
   margin: 20px;
 }
-.contacto .parrafo-contacto {
-  font-family: "Times New Roman", Times, serif;
+.contacto img {
+  display: flex;
+}
+
+.fototeca img {
+  background-size: cover;
+  border-radius: 5%;
 }
 
 .lista {
@@ -110,7 +123,41 @@ p {
 }
 
 .carousel-indicators {
-  margin-bottom: -15px; /* Ajusta este valor según sea necesario */
+  margin-bottom: -25px; /* Ajusta este valor según sea necesario */
+}
+
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background-size: 80%;
+  background-position: center;
+  z-index: 1; /* Fondo de la imagen, detrás del texto */
+  opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+}
+
+.carousel-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Texto por encima de la imagen */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+  border-radius: 8px; /* Esquinas redondeadas para un diseño más suave */
+  max-width: 80%; /* Evita que el texto sea demasiado ancho */
+}
+
+.carousel-item {
+  position: relative;
+  height: 80vh;
+}
+
+.custom-position {
+  bottom: 10%; /* Coloca el texto cerca de la parte inferior */
 }
 
 .jugador {
@@ -132,6 +179,18 @@ p {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(10, auto);
   width: 50%;
+}
+.jugador .grid-clasificacion {
+  display: grid;
+  margin: 0 auto; /* centra la tabla horizontalmente */
+  row-gap: 20px;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(12, auto);
+  width: 100%;
+}
+.jugador .grid-clasificacion .escudos {
+  width: 20px;
+  height: 20px;
 }
 .jugador .grid-item {
   color: beige;
@@ -173,6 +232,15 @@ p {
   margin: 0 auto; /* Centra la imagen */
   max-width: 100%; /* Asegura que la imagen sea responsive */
   height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.zoom-transition {
+  transition: transform 0.5s ease; /* Duración y suavidad de la transición */
+  max-width: 100%; /* Para que se ajuste al contenedor si es necesario */
+  height: auto;
+}
+.zoom-transition:hover {
+  transform: scale(1.1); /* Ajusta el valor de escala para agrandar la imagen */
 }
 
 .testimonios {

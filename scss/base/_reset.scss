@@ -17,9 +17,10 @@ body {
         padding-top: 70px;
     }
     
-    .titulo-2, .titulo-3 {
+    .titulo-2, .titulo-4 {
         color: beige;
         @include title (("Edu AU VIC WA NT Hand", cursive), flex, center, 0, 10px, 0);
+        padding: 30px;
     }
     
     .titulo-3 {
@@ -29,7 +30,7 @@ body {
 
     .parrafo, .parrafo-2 {
         color: beige;
-        max-width: 80%; /* Limita el ancho máximo para pantallas grandes */
+        max-width: 90%; /* Limita el ancho máximo para pantallas grandes */
         margin: 10px auto; /* Centra el párrafo en su contenedor */
         text-align: center; /* Alinea el texto al centro */
         line-height: 1.6; /* Mejora la legibilidad */
@@ -39,7 +40,15 @@ body {
     
     .parrafo-2 {
         border: 2px solid rgb(179, 130, 138);
-        font-size: 1rem
+        font-size: 1rem;
+    }
+    
+    h5 {
+        color: #f8e7ee;
+    }
+
+    .img {
+        border-radius: 10%;
     }
 }
 
@@ -57,8 +66,16 @@ p {
 
 .contacto {
     color: beige;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     margin: 20px;
-    .parrafo-contacto {
-        font-family: 'Times New Roman', Times, serif;
+    img {
+        display: flex;
+    }
+}
+
+.fototeca {
+    img {
+        background-size: cover;
+        border-radius: 5%;
     }
 }

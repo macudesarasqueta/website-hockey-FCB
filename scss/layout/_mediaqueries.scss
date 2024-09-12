@@ -1,5 +1,4 @@
 @media only screen and (max-width: 900px) {
-    
     .mobile-navbar {
         display: block !important;
     }
@@ -11,6 +10,7 @@
     }
     .titulo-index{
         font-size: 20px !important;
+        flex-direction: column !important;
     }
     .grid-tecnico {
         width: 80% !important;
@@ -28,5 +28,8 @@
     }
     .grid-testimonios {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .mapa {
+        width: 100% !important;
     }
 }

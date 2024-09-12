@@ -21,8 +21,30 @@
 .container {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
     img {
+        display: block;
         margin: 0;
+        max-width: 100%; /* Asegura que las imágenes no se salgan del contenedor */
+        height: auto; 
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 6px;
+    text-decoration: none;
+    color: inherit;
+    background-color: #d9cd43c0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-width: 19%;
+    &:hover {
+        background-color: #d9cd43f2;
+        text-decoration: underline;
     }
 }
 

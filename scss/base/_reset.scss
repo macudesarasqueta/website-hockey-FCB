@@ -13,16 +13,22 @@ body {
         color: beige;
         @include title (("Edu AU VIC WA NT Hand", cursive), flex, center, center, 10px, 0);
         padding-top: 70px;
-
+        
         span {
             opacity: 0;
             transform: translateY(-50px);
-            animation: slideDown 0.3s ease forwards;
+            animation: slideDown 0.5s ease forwards;
         }
-
         @for $i from 1 through 30 {
-            span:nth-child(#{$i}) {
-                animation-delay: 0.1s * ($i - 1);
+            @if $i <= 15 {
+                span:nth-child(#{$i}) {
+                    animation-delay: 0.1s * ($i - 1);
+                }
+            } 
+            @else if $i >= 17 {
+                span:nth-child(#{$i}) {
+                    animation-delay: 0.1s * ($i - 17);
+                }
             }
         }
     }
@@ -40,11 +46,11 @@ body {
 
     .parrafo, .parrafo-2 {
         color: beige;
-        max-width: 90%; /* Limita el ancho máximo para pantallas grandes */
+        max-width: 100%; /* Limita el ancho máximo para pantallas grandes */
         margin: 10px auto; /* Centra el párrafo en su contenedor */
         text-align: center; /* Alinea el texto al centro */
         line-height: 1.6; /* Mejora la legibilidad */
-        font-size: 1.2rem; /* Tamaño de fuente estándar */
+        font-size: 1rem; /* Tamaño de fuente estándar */
         padding: 5px; /* Espacio alrededor del texto */
     }
     

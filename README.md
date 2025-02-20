@@ -13,7 +13,9 @@ Este es un sitio web dedicado al equipo femenino de hockey sobre hierba del Fút
 
 ## Descripción
 
-Este sitio web está diseñado para proporcionar a los fanáticos y seguidores del equipo femenino de hockey sobre hierba del FC Barcelona toda la información relevante, incluyendo noticias, plantilla de jugadoras, cuerpo técnico, historia del equipo, galería de imágenes, y un formulario de contacto.
+Este sitio web está diseñado para proporcionar a los fanáticos y seguidores del equipo femenino de hockey sobre hierba del FC Barcelona toda la información relevante, incluyendo noticias, plantilla de jugadoras, cuerpo técnico, clasificación, historia del equipo y galería de imágenes. 
+
+Recientemente se ha agregado un **iframe** en la página `clasificacion.html` para mostrar la clasificación del equipo de una manera interactiva y dinámica.
 
 ## Uso
 
@@ -24,6 +26,7 @@ El sitio está organizado en varias secciones accesibles desde el menú de naveg
 - **Cuerpo Técnico**: Información sobre el cuerpo técnico.
 - **Testimonios**: Comentarios y testimonios de jugadores y aficionados.
 - **Historia**: Historia del equipo de hockey sobre hierba femenino del FC Barcelona.
+- **Clasificación**: Página con la clasificación del equipo, que ahora incluye un **iframe** para mostrar información dinámica.
 - **Galería**: Imágenes destacadas del equipo.
 - **Contacto**: Formulario para contactar al equipo o a los administradores del sitio.
 
@@ -53,7 +56,6 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 ## Contacto
 
-- **Nombre**: Macarena de Sarasqueta
+- **Nombre**: Macarena de Sarasqueta Szneiderowicz
 - **Correo Electrónico**: macu.desarasqueta@gmail.com
 - **GitHub**: [https://github.com/macudesarasqueta](https://github.com/macudesarasqueta)
-

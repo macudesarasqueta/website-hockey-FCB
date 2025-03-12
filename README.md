@@ -6,7 +6,7 @@ Welcome to the **Website Hockey FCB** repository! This project is dedicated to s
 This website serves as an official or fan-driven platform to provide details about the hockey division of FC Barcelona, including schedules, player details, and news.
 
 ## 🛠 Technologies Used
-- HTML, CSS, JavaScript
+- HTML, CSS
 - Tailwind CSS / Bootstrap (for styling)
 - Node.js
 

@@ -7,10 +7,8 @@ This website serves as an official or fan-driven platform to provide details abo
 
 ## 🛠 Technologies Used
 - HTML, CSS, JavaScript
-- React.js (if applicable)
 - Tailwind CSS / Bootstrap (for styling)
-- Node.js / Express (if backend is involved)
-- Other relevant tools
+- Node.js
 
 ## 📂 Project Structure
 ```
@@ -52,7 +50,7 @@ website-hockey-FCB/
 
 ## 🌐 Live Demo
 Check out the live version of the website [hockey-femeni-fcb.vercel.app
-](#) (update with your deployment link).
+](#).
 
 ## 🤝 Contributing
 If you would like to contribute, feel free to submit issues or pull requests.

@@ -1,0 +1,24 @@
+# Archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de respaldo o temporales
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Configuración de editores de código
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Archivos de caché o compilación
+*.cache
+
+# Archivos CSS generados por Sass
+*.css
+*.css.map
+
+# Carpeta de caché de Sass
+.sass-cache/

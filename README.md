@@ -1,61 +1,66 @@
-# Hockey Hierba Femenino FCB
+# Website Hockey FCB
 
-Este es un sitio web dedicado al equipo femenino de hockey sobre hierba del Fútbol Club Barcelona (FCB). El sitio está diseñado para proporcionar información sobre el equipo, sus logros y eventos importantes, además de permitir el acceso a diversas secciones del sitio a través de un menú de navegación.
+Welcome to the **Website Hockey FCB** repository! This project is dedicated to showcasing the hockey section of FC Barcelona, featuring team information, match updates, and more.
 
-## Índice
+## 🚀 About the Project
+This website serves as an official or fan-driven platform to provide details about the hockey division of FC Barcelona, including schedules, player details, and news.
 
-- [Descripción](#descripción)
-- [Uso](#uso)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
-- [Contacto](#contacto)
+## 🛠 Technologies Used
+- HTML, CSS, JavaScript
+- React.js (if applicable)
+- Tailwind CSS / Bootstrap (for styling)
+- Node.js / Express (if backend is involved)
+- Other relevant tools
 
-## Descripción
+## 📂 Project Structure
+```
+website-hockey-FCB/
+│── public/          # Static assets
+│── src/             # Source code
+│   ├── components/  # UI components
+│   ├── pages/       # Page views
+│   ├── assets/      # Images, icons, and other assets
+│── README.md        # Project documentation
+│── package.json     # Dependencies and scripts
+│── .gitignore       # Ignored files
+```
 
-Este sitio web está diseñado para proporcionar a los fanáticos y seguidores del equipo femenino de hockey sobre hierba del FC Barcelona toda la información relevante, incluyendo noticias, plantilla de jugadoras, cuerpo técnico, clasificación, historia del equipo y galería de imágenes. 
+## 🎨 Features
+- Latest match results and schedules
+- Player profiles and statistics
+- News and updates about the team
+- Responsive design for all devices
+- Interactive elements for user engagement
 
-Recientemente se ha agregado un **iframe** en la página `clasificacion.html` para mostrar la clasificación del equipo de una manera interactiva y dinámica.
+## 📌 How to Run the Project
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/macudesarasqueta/website-hockey-FCB.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd website-hockey-FCB
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
 
-## Uso
+## 🌐 Live Demo
+Check out the live version of the website [hockey-femeni-fcb.vercel.app
+](#) (update with your deployment link).
 
-El sitio está organizado en varias secciones accesibles desde el menú de navegación:
+## 🤝 Contributing
+If you would like to contribute, feel free to submit issues or pull requests.
 
-- **Inicio**: Página principal con información básica y noticias.
-- **Jugadoras**: Listado y detalles de las jugadoras del equipo.
-- **Cuerpo Técnico**: Información sobre el cuerpo técnico.
-- **Testimonios**: Comentarios y testimonios de jugadores y aficionados.
-- **Historia**: Historia del equipo de hockey sobre hierba femenino del FC Barcelona.
-- **Clasificación**: Página con la clasificación del equipo, que ahora incluye un **iframe** para mostrar información dinámica.
-- **Galería**: Imágenes destacadas del equipo.
-- **Contacto**: Formulario para contactar al equipo o a los administradores del sitio.
+## 📧 Contact
+For inquiries, please reach out via email or connect on [https://www.linkedin.com/in/macarena-de-sarasqueta-szneiderowicz-62a80322b/](#).
 
-## Tecnologías Utilizadas
+---
 
-- **HTML5**: Estructura y contenido del sitio.
-- **CSS3**: Estilos y diseño visual.
-- **Bootstrap 5**: Framework CSS para diseño responsivo.
-- **JavaScript**: Interactividad y lógica.
-- **Sass**: Preprocesador CSS.
-- **Flaticon**: Iconos gráficos.
-- **Google Fonts**: Tipografías personalizadas.
+⭐ Don't forget to star the repo if you find it useful!
 
-## Contribuciones
-
-¡Las contribuciones son bienvenidas! Si deseas contribuir al proyecto, por favor sigue los pasos a continuación:
-
-1. Haz un fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature-nueva-caracteristica`).
-3. Realiza tus cambios y haz un commit (`git commit -m 'Añadir nueva característica'`).
-4. Haz un push a la rama (`git push origin feature-nueva-caracteristica`).
-5. Abre un Pull Request.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
-## Contacto
-
-- **Nombre**: Macarena de Sarasqueta Szneiderowicz
-- **Correo Electrónico**: macu.desarasqueta@gmail.com
-- **GitHub**: [https://github.com/macudesarasqueta](https://github.com/macudesarasqueta)
